@@ -1,0 +1,85 @@
+.chatbot-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+  }
+  
+  .messages-container {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .user-message {
+    background-color: #f0f0f0;
+    align-self: flex-end;
+  }
+  
+  .chatbot-message {
+    background-color: #e0e0ff;
+    align-self: flex-start;
+  }
+  
+  .message-form {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .chatbot-chip {
+    margin-bottom: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .message-input {
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .send-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .ellipsis {
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .ellipsis::after {
+    content: '';
+    animation: ellipsisAnimation 1.5s infinite;
+  }
+  
+  @keyframes ellipsisAnimation {
+    0% { content: ''; }
+    33% { content: '.'; }
+    66% { content: '..'; }
+    100% { content: '...'; }
+  }
