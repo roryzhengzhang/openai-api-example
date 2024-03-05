@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 
-const my_api_key = "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"; // replace with your api key here or put OPENAI_API_KEY in .env file and use process.env.OPENAI_API_KEY
+const my_api_key = "replace with your OpenAI API Key here"; // replace with your api key here or put OPENAI_API_KEY in .env file and use process.env.OPENAI_API_KEY
 // you need to add dangerouslyAllowBrowser flag to the OpenAI constructor to use the api directly in the browser
 const client = new OpenAI({ apiKey: my_api_key, dangerouslyAllowBrowser: true });
 /*
